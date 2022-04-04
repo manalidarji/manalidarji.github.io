@@ -9,17 +9,21 @@ body{display: flex;flex-direction: column;min-height: 100vh;font-family: 'Poppin
 
 /* utilities css */
 .text-center{text-align: center;}
+@keyframes pulse {
+	0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 175, 193, 0.7);}
+	70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(0, 175, 193, 0);}
+	100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 175, 193, 0.7);}
+}
 
 /* header css */
-header{padding: 20px 0;border-bottom: 1px solid #808080;}
+header{padding: 20px 0;}
 .logo-menu-wrap{display: flex;justify-content: space-between;align-items: center;}
 .logo{font-size: 35px;}
 .header-menu ul{display: flex;gap: 20px;}
 .header-menu li{text-transform: capitalize;font-size: 16px;}
 .header-menu li a{position: relative;}
-.header-menu li a:after{content: ''; position: absolute; bottom: -2px; left: 0; right: 0; width: 100%; height: 3px; transform: scaleX(0); background-color: #00AFC1; transition: transform 0.3s;}
+.header-menu li a:after{content: ''; position: absolute; bottom: -2px; left: 0; right: 0; width: 100%; height: 3px; transform: scaleX(0); background-color: #FFD124; transition: transform 0.3s;}
 .header-menu li a:hover:after{transform: scaleX(1);}
-
 .hamburger span{display: block; position: absolute; height: 3px; width: 100%; background: #333; opacity: 1; left: 0; transform: rotate(0deg); transition: .25s ease-in-out; transform-origin: left center; }
 
 /* hamburger*/
@@ -30,13 +34,34 @@ header{padding: 20px 0;border-bottom: 1px solid #808080;}
 #hamburger span:nth-child(3){bottom: 0;}
 
 /* mobile menu css */
-#mob-header-menu{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; text-align: center; z-index: 9999;transition: transform .3s ease;transform: translateY(-100%);background: #fff;color: #006778;}
+#mob-header-menu{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; text-align: center; z-index: 9999;transition: all .3s ease;transform: translateY(-100%);background: #fff;color: #006778;}
 #mob-header-menu.active{transform: translateY(0);} 
 #mob-header-menu nav{display: flex; flex-direction: column;gap: 15px; align-items: center; justify-content: center; min-height: 100%;}
 #mob-header-menu ul li{text-transform: uppercase;font-weight: 700;font-size: 17px;line-height: 35px; letter-spacing: 1px;}
 #close-mob-menu{width: 25px;height: 25px;position: absolute;top: 34px;right: 15px}
 #close-mob-menu span{position: absolute;width: 100%;height: 3px;background: #006778;right: 0;transform: rotate(45deg);top: 11px;}
 #close-mob-menu span:nth-child(2){transform: rotate(-45deg);}
+
+
+/* hero section  */
+.hero-section{display: flex;align-items: center;justify-content: space-between;padding: 100px 0;}
+.my-image{width:500px;height:500px;border-radius: 50%; background: url(../images/manali.png) no-repeat center center;background-size: cover;border: 10px solid #00AFC1;animation: pulse 2s infinite;}
+.hero-content{padding-left: 100px;}
+.hero-content h2{font-size: 25px;margin-bottom: 15px;}
+.hero-content h2 span{font-size: 35px;color: #FFD124;}
+.hero-content p{font-size: 15px;line-height: 30px;margin-bottom: 20px;}
+.icons-wrap{display: flex;gap: 20px;}
+.icons-wrap svg{width: 30px;fill: #fff;transition: all 0.3s linear;}
+.gmail-wrap svg{transform: scale(1.15);}
+/* .icons-wrap a:hover svg{fill: #FFD124;} */
+
+.gmail-wrap a:hover svg{fill: #ff9c96;}
+.linkedin-wrap a:hover svg{fill: #68b4ff;}
+.github-wrap a:hover svg{fill: #000;}
+
+/* .icons-wrap .gmail-wrap a:hover svg{transform: rotateX(360deg) scale(1.15);} */
+
+
 
 
 /* footer css */
@@ -46,5 +71,16 @@ footer{padding: 15px 0;}
     #hamburger{display: block;}
     .header-menu{display: none;}
 
+    .hero-section{padding: 70px 0;}
+    .my-image{width: 300px;height: 300px;}
+    .hero-content{padding-left: 70px;}
+
     footer{font-size: 13px;}
+}
+
+@media only screen and (max-width: 767px){
+    .hero-section{flex-direction: column;padding: 40px 0;}
+    .hero-content{padding-left: 0;text-align: center;}
+    .my-image-wrap{margin-bottom: 30px;}
+    .icons-wrap{justify-content: center;}
 }
