@@ -12,7 +12,6 @@ html{scrollbar-color: var(--teal) #dedede;scrollbar-width: thin;}
 li{list-style: none;}
 a{font: inherit;color: inherit;text-decoration: none;}
 body{display: flex;flex-direction: column;min-height: 100vh;font-family: 'Poppins', sans-serif;font-size: 15px;}
-
 #main-wrap{flex: 1 0 auto;}
 .container{max-width: 1200px;margin: 0 auto;padding: 0 15px;}
 .divider{margin-bottom: 50px;}
@@ -23,6 +22,12 @@ body{display: flex;flex-direction: column;min-height: 100vh;font-family: 'Poppin
 	0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 175, 193, 0.7);}
 	70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(0, 175, 193, 0);}
 	100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 175, 193, 0.7);}
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
 }
 /* header css */
 header{padding: 20px 0;background: var(--teal);color: #fff;}
@@ -56,8 +61,8 @@ header{padding: 20px 0;background: var(--teal);color: #fff;}
 .hero-section{display: flex;align-items: center;justify-content: space-between;padding: 100px 0;}
 .my-image{width:500px;height:500px;border-radius: 50%; background: url(../images/manali.png) no-repeat center center;background-size: cover;border: 10px solid #00AFC1;animation: pulse 2s infinite;}
 .hero-content{padding-left: 100px;}
-.hero-content h2{font-size: 25px;margin-bottom: 15px;}
-.hero-content h2 span{font-size: 35px;color: var(--yellow);}
+.hero-content h2{font-size: 28px;margin-bottom: 15px;}
+.input-cursor{display: inline-block; width: 2px; height: 28px; background-color: var(--yellow); margin-left: 4px;  animation: blink .6s linear infinite alternate;}
 .hero-content p{font-size: 15px;line-height: 30px;margin-bottom: 20px;}
 .icons-wrap{display: flex;gap: 20px;}
 .icons-wrap svg{width: 30px;fill: #fff;transition: all 0.3s linear;}
@@ -78,6 +83,14 @@ header{padding: 20px 0;background: var(--teal);color: #fff;}
 .single:last-child{border-bottom: none;padding: 0;margin: 0;}
 .roles{color: #707070;margin-top: 8px;}
 .roles li{list-style: disc;list-style-position: inside; font-size: 14px;line-height: 25px;}
+
+/* education css */
+.education-wrap{margin: 0 !important;}
+
+/* portfolio css */
+.portfolio-outter-wrap{background: var(--teal);color: #fff;}
+.portfolio-outter-wrap .section-title{color: #fff;}
+
 
 /* footer css */
 footer{padding: 10px 0;background: var(--teal);color: #fff;font-size: 14px;}
