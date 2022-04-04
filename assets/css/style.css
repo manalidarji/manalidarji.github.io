@@ -94,6 +94,10 @@ header{padding: 20px 0;background: var(--teal);color: #fff;}
 
 /* footer css */
 footer{padding: 10px 0;background: var(--teal);color: #fff;font-size: 14px;}
+.heart{display: inline-block; background-color: #ff2b2b; width: 10px; height: 10px; position: relative;transform: rotate(45deg);}
+.heart:before, .heart:after { position: absolute; content: '';width: 10px; height: 10px; background-color: #ff2b2b;border-radius: 50%;} 
+.heart:before{left: -5px;} 
+.heart:after{top: -5px;left: 0;}
 
 @media only screen and (max-width: 1024px){
     #hamburger{display: block;}
