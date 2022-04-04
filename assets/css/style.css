@@ -62,10 +62,16 @@ header{padding: 20px 0;background: #006778;color: #fff;}
 .section-title{color: #006778; font-size: 25px;text-transform: uppercase;letter-spacing: 3px;}
 .section-title span{font-size: 35px;color: #FFD124;}
 .my-flex-box{display: flex;justify-content: space-between;align-items: center;}
-.my-flex-box div{width: 75%;}
+.my-flex-box > div{width: 75%;}
 .skills-content{display: grid;grid-template-columns: 1fr 1fr;gap: 40px;}
-.skill-type{margin-bottom: 8px;font-weight: 700;text-transform: capitalize;font-size: 18px;color: #484848;}
+.sub-heading{margin-bottom: 8px;font-weight: 700;text-transform: capitalize;font-size: 18px;color: #484848;}
 .all-skills{color: #707070;}
+
+.single{padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;}
+.single:last-child{border-bottom: none;padding: 0;margin: 0;}
+.roles{color: #707070;margin-top: 8px;}
+.roles li{list-style: disc;list-style-position: inside; font-size: 14px;line-height: 25px;}
+
 
 
 
@@ -94,7 +100,7 @@ footer{padding: 15px 0;}
 
 
     .my-flex-box{flex-direction: column;}
-    .my-flex-box div{width: 100%;margin-top: 20px;}
+    .my-flex-box > div{width: 100%;margin-top: 20px;}
 }
 
 @media only screen and (max-width: 599px){
