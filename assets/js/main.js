@@ -30,12 +30,7 @@ for (const link of links) {
     link.addEventListener('click', function(e){
         e.preventDefault();
         const href = this.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop - header.offsetHeight;
-
-        console.log('href offsetTop',document.querySelector(href).offsetTop);
-        console.log('offsetHeight header', header.offsetHeight);
-        console.log('offsetTop',offsetTop)
-        
+        const offsetTop = document.querySelector(href).offsetTop - header.offsetHeight;        
         scroll({
           top: offsetTop,
           behavior: 'smooth'
