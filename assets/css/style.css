@@ -15,8 +15,7 @@ body{display: flex;flex-direction: column;min-height: 100vh;font-family: 'Poppin
 button{border: none;font: inherit}
 #main-wrap{flex: 1 0 auto;}
 .container{max-width: 1200px;margin: 0 auto;padding: 0 15px;}
-.divider{margin-bottom: 50px;}
-.border-bottom{border-bottom: 1px solid #c6c6c6;padding-bottom: 50px;}
+.border-bottom{border-bottom: 1px solid #c6c6c6;}
 /* utilities css */
 .text-center{text-align: center;}
 .img-resp{display: block;width: 100%;height: auto;}
@@ -32,7 +31,7 @@ button{border: none;font: inherit}
     100% {opacity: 0;}
 }
 /* header css */
-header{padding: 20px 0;background: var(--teal);color: #fff;}
+header{padding: 20px 0;background: var(--teal);color: #fff;transition: all 0.3s linear;top: 0;left: 0; width: 100%;z-index: 1;border-bottom: 1px solid #7b7b7b;position: fixed;}
 .logo-menu-wrap{display: flex;justify-content: space-between;align-items: center;}
 .logo{font-size: 35px;}
 .header-menu ul{display: flex;gap: 20px;}
@@ -72,25 +71,22 @@ header{padding: 20px 0;background: var(--teal);color: #fff;}
 .gmail-wrap a:hover svg{fill: #ff9c96;transform: scale(1.6);}
 .linkedin-wrap a:hover svg{fill: #68b4ff;transform: scale(1.4);}
 .github-wrap a:hover svg{fill: #a2a2a2;transform: scale(1.4);}
-
 .section-title{color: var(--teal); font-size: 25px;text-transform: uppercase;letter-spacing: 3px;}
 .section-title span{font-size: 35px;color: var(--yellow);}
+section{padding: 50px 0;}
+#about{margin-top: 87px;}
 .my-flex-box{display: flex;justify-content: space-between;align-items: center;}
 .my-flex-box > div{width: 71%;}
 .skills-content{display: grid;grid-template-columns: 1fr 1fr;gap: 40px;}
 .sub-heading{margin-bottom: 8px;font-weight: 700;text-transform: capitalize;font-size: 18px;color: #484848;}
 .all-skills{color: #707070;}
-
 .single{padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #e2e2e2;}
 .single:last-child{border-bottom: none;padding: 0;margin: 0;}
 .roles{color: #707070;margin-top: 8px;}
 .roles li{list-style: disc;list-style-position: inside; font-size: 14px;line-height: 25px;}
 
-/* education css */
-.education-wrap{margin: 0 !important;}
-
 /* portfolio css */
-.portfolio-outter-wrap{background: var(--teal);color: #fff;padding: 50px 0;}
+.portfolio-outter-wrap{background: var(--teal);color: #fff;}
 .portfolio-outter-wrap .section-title{color: #fff;margin-bottom: 25px;}
 #all-projects-wrap{display: grid;overflow: hidden;gap: 20px;grid-template-columns: 1fr 1fr 1fr 1fr;}
 .project-wrap{position: relative;border-radius: 10px;overflow: hidden;border: 1px solid #989898;}
@@ -115,24 +111,22 @@ footer{padding: 10px 0;background: var(--teal);color: #fff;font-size: 14px;}
 @media only screen and (max-width: 1024px){
     #hamburger{display: block;}
     .header-menu{display: none;}
-
     .hero-section{padding: 70px 0;}
     .my-image{width: 300px;height: 300px;}
     .hero-content{padding-left: 70px;}
 }
 
 @media only screen and (max-width: 767px){
+    .logo{font-size: 30px;}
+    .sticky + #main-wrap{padding-top: 86px;}
     .divider{margin-bottom: 30px;}
-    .border-bottom{padding-bottom: 30px;}
     .hero-section{flex-direction: column;padding: 40px 0;}
     .hero-content{padding-left: 0;text-align: center;}
     .my-image-wrap{margin-bottom: 30px;}
     .icons-wrap{justify-content: center;}
-
+    section{padding: 30px 0;}
     .my-flex-box{flex-direction: column;}
     .my-flex-box > div{width: 100%;margin-top: 20px;}
-
-    .portfolio-outter-wrap{padding: 30px 0;}
     .portfolio-outter-wrap .section-title{margin-bottom: 20px;line-height: 30px;}
     #all-projects-wrap{grid-template-columns: 1fr 1fr;}
     .project-content-overlay{padding-top: 9px;}

@@ -24,9 +24,22 @@ document.getElementById('close-mob-menu').addEventListener('click', function(e){
     e.preventDefault;
     mobMenu.classList.remove('active');
 })
-const links = document.querySelectorAll('#mob-header-menu ul li a');
+const header = document.getElementById('header');
+const links = document.querySelectorAll('.nav li a');
 for (const link of links) {
     link.addEventListener('click', function(e){
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop - header.offsetHeight;
+
+        console.log('href offsetTop',document.querySelector(href).offsetTop);
+        console.log('offsetHeight header', header.offsetHeight);
+        console.log('offsetTop',offsetTop)
+        
+        scroll({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
         mobMenu.classList.remove('active');
     });
 }
