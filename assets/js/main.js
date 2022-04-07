@@ -1,3 +1,4 @@
+// typing effect for hero section
 async function typeSentence(sentence, eleRef, delay = 100) {
     const letters = sentence.split('');
     let i = 0;
@@ -11,21 +12,24 @@ async function typeSentence(sentence, eleRef, delay = 100) {
 function waitForMs(ms) {
 return new Promise(resolve => setTimeout(resolve, ms))
 }
-
-// typing effect for hero section
 typeSentence('I am Manali Darji.', 'about-title', 180);
 
-
+// menu links
 let mobMenu = document.getElementById('mob-header-menu');
 document.getElementById('hamburger').addEventListener('click', function(e){
     e.preventDefault;
     mobMenu.classList.add('active');
 })
-
 document.getElementById('close-mob-menu').addEventListener('click', function(e){
     e.preventDefault;
     mobMenu.classList.remove('active');
 })
+const links = document.querySelectorAll('#mob-header-menu ul li a');
+for (const link of links) {
+    link.addEventListener('click', function(e){
+        mobMenu.classList.remove('active');
+    });
+}
 
 // portfolio section
 const projects = [
@@ -81,23 +85,3 @@ projects.forEach(project => {
     `;
     allProjectsNode.innerHTML += projectNode;
 })
-
-
-
-
-
-
-// function scrollTo(element, to, duration) {
-//     if (duration <= 0) return;
-//     var difference = to - element.scrollTop;
-//     var perTick = difference / duration * 10;
-
-//     setTimeout(function() {
-//         element.scrollTop = element.scrollTop + perTick;
-//         if (element.scrollTop === to) return;
-//         scrollTo(element, to, duration - 10);
-//     }, 10);
-// }
-
-// elmnt = document.getElementById('experience');
-// scrollTo(document.body, elmnt.offsetTop, 600);

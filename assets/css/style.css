@@ -4,7 +4,7 @@
     --yellow: #FFD124
 }
 /*scroll bar css*/
-html{scrollbar-color: var(--teal) #dedede;scrollbar-width: thin;}
+html{scrollbar-color: var(--teal) #dedede;scrollbar-width: thin;scroll-behavior: smooth; }
 ::-webkit-scrollbar, ::-webkit-scrollbar:horizontal{background: #dedede;width: 7px;height: 3px;}
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal{background: var(--teal);border-radius: 5px;border-left: 1px solid #dedede;}
 /* reset css */
