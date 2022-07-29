@@ -61,7 +61,7 @@ header{padding: 20px 0;background: var(--priColor);color: #fff;transition: all 0
 .hero-section-main-wrap{background: var(--priColor);color: #fff;}
 /* .hero-section{display: flex;align-items: center;justify-content: space-between;padding: 100px 0;} */
 .my-image-wrap{display: flex;justify-content: center;margin-bottom: 30px;}
-.my-image{width: 320px;height: 350px;border-radius: 50%; background: url(../images/manali.png) no-repeat center center;background-size: cover;border: 10px solid #00AFC1;animation: pulse 2s infinite;}
+.my-image{width: 320px;height: 320px;border-radius: 50%; background: url(../images/manali.png) no-repeat center center;background-size: cover;border: 10px solid #00AFC1;animation: pulse 2s infinite;}
 .hero-content{text-align: center;width: 75%;margin: auto;}
 .hero-content h2{font-size: 28px;margin-bottom: 15px;}
 .input-cursor{display: inline-block; width: 2px; height: 28px; background-color: var(--secColor); margin-left: 4px;  animation: blink .6s linear infinite alternate;}
