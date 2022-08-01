@@ -63,7 +63,7 @@ header{padding: 20px 0;background: var(--priColor);color: #fff;transition: all 0
 .my-image{width: 320px;height: 320px;border-radius: 50%; background: url(../images/manali.png) no-repeat center center;background-size: cover;border: 10px solid #00AFC1;animation: pulse 2s infinite;}
 .hero-content{text-align: center;width: 75%;margin: auto;}
 .hero-content h2{font-size: 28px;margin-bottom: 15px;}
-.input-cursor{display: inline-block; width: 2px; height: 28px; background-color: var(--secColor); margin-left: 4px;  animation: blink .6s linear infinite alternate;}
+.input-cursor{display: inline-block; width: 2px; height: 28px; background-color: #fff; margin-left: 4px;  animation: blink .6s linear infinite alternate;}
 .hero-content p{font-size: 15px;line-height: 30px;margin-bottom: 10px;}
 .icons-wrap{display: flex;gap: 20px;justify-content:center;position: relative;top: 30px;}
 .icon a{display: flex;justify-content: center;align-items: center; width: 60px;height: 60px;background: var(--secColor);border-radius: 50%;transition: all 0.3s linear;}

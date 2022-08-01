@@ -170,7 +170,7 @@ async function typeSentence(sentence, eleRef, delay = 100) {
 function waitForMs(ms) {
 return new Promise(resolve => setTimeout(resolve, ms))
 }
-typeSentence('I am Manali Darji.', 'about-title', 180);
+typeSentence('I am a Web Developer.', 'about-title', 180);
 
 // menu links
 let mobMenu = document.getElementById('mob-header-menu');
