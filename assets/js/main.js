@@ -18,6 +18,7 @@ const experiences = [
         period: 'Jul 2017 - Aug 2021',
         roles: [
             'Implemented Single Page Applications(SPA) using React JS as Front-End Technology, along with integrating the backend systems using RESTful APIs for 5+ wesbsites.',
+            'Created an ecommerce site using HTML5, CSS3, Node.js, Express.js, Handlebars.js, PostgreSQL',
             'Implemented custom Wordpress themes from scratch as per the designs for 10+ websites.',
             'Delivered 10+ websites with engaging user experience and highly optimised code that helped reduce load times by 60% and improved revenue by 35%.',
             'Followed modular and DRY(Don\'t Repeat Yourself) approach throughout the process, leading to decrease in development time by 80%.',
