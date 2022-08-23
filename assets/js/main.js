@@ -5,26 +5,24 @@ const experiences = [
         company_name: 'Giatec-Smart Construction Solutions',
         period: 'May 22 - Present',
         roles: [
-            'Optimised websites to create polished and engaging web experiences to reflect company\'s brand.',
-            'Implemented solely, re-branding project of the company\'s main website thus increasing user engagement by 15%.',
-            'Identified code issues, recommended as well as implemented the solutions improving code quality.',
-            'Created website layout/user interfaces by using standard web development practices.',
-            'Collaborated with the Marketing and Design team to optimise landing pages in order to convert web visitors into potential clients.'
+            'Created website layout/user interfaces using HTML, CSS, JQuery by using standard web development practices in order to deliver quality user experience.',
+            'Worked on rebranding of the company\'s main website as per latest design standards, resulting in increase of organic traffic and improvement in revenue by 15%.',
+            'Analyzed and fixed the errors, warnings and notices on the websites, provided by Semrush Tool thus increasing the site health by 8%.',
+            'Analyzed and fixed Google Tag Manager(GTM) issues thus re-gaining analytics data on the dashboard.'
         ]
     },
     {
-        position: 'UI Developer',
+        position: 'Senior UI Developer',
         company_name: 'Media.net Software Services (India) Pvt. Ltd',
         period: 'Jul 2017 - Aug 2021',
         roles: [
-            'Implemented Single Page Applications(SPA) using React JS as Front-End Technology, along with integrating the backend systems using RESTful APIs for 5+ wesbsites.',
-            'Created an ecommerce site using HTML5, CSS3, Node.js, Express.js, Handlebars.js, PostgreSQL',
-            'Implemented custom Wordpress themes from scratch as per the designs for 10+ websites.',
-            'Delivered 10+ websites with engaging user experience and highly optimised code that helped reduce load times by 60% and improved revenue by 35%.',
-            'Followed modular and DRY(Don\'t Repeat Yourself) approach throughout the process, leading to decrease in development time by 80%.',
+            'Implemented Single Page Applications(SPAs) using ReactJs, React-Router as Front-End Technology by consuming REST API.',
+            'Implemented custom WordPress themes from scratch as per the designs for 15+ websites.',
+            'Implemented headless WordPress websites consuming WP REST API using ReactJs to build its front-end, thus eliminating the need of WordPress themes.',
+            'Analyzed, designed and implemented REST API using NodeJs, ExpressJs and Java Spring Boot.',
+            'Collaborated with Business, Design, Back-End and QA Teams to deliver highly optimized websites.',
             'Implemented Google Analytics and Facebook Pixel Code which helped the business team understand various user\'s interaction with the website, thus increasing the overall revenue by 15%.',
-            'Created an internal workflow process for bulk tasks amongst team members which decreased the turnaround time by 75%.',
-            'Supervised and mentored 4 junior team members to achieve high performance of the team and meet all business goals.'
+            'Mentored 3 new employees to achieve high performance of the team and meet all business goals.',
         ]
     },
     {
@@ -32,12 +30,10 @@ const experiences = [
         company_name: 'Capgemini',
         period: 'Jul 2014 - Jun 2017',
         roles: [
-            'Experienced with Software Development Life Cycle(SDLC) which includes methodologies like Waterfall and Agile method.',
-            'Acquired in-depth knowledge of industry\'s best testing practices for Functional and Performance testing of a web application.',
-            'Created automated test cases for Functional and Regression testing based on the requirements using Ranorex Studio to decrease testing time by 60%',
-            'Experienced in executing SQL queries in order to view successful transactions of data and for validating data.',
+            'Experienced with Software Development Life Cycle(SDLC) following Agile Methodology.',
+            'Created automated test cases for Functional and Regression testing based on the requirements using Ranorex Studio to decrease testing time by 60%.',
             'Reviewed and reported software bug reports, highlighting problem areas.',
-            'Trained new hired team members and promoted supportive, performance-oriented atmosphere.'
+            'Experienced in executing SQL queries in order to view successful transactions and validation of data.'
         ]
     },
 ];
